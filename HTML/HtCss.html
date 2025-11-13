@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cascading Style Sheet</title>
+    <link rel="stylesheet" href="../CSS/HtCss.css" />
+  </head>
+  <body>
+    <header>
+      <h1><u>About Css</u></h1>
+    </header>
+    <main>
+      <strong
+        >Css is used to style the HTML elements on the web page. It
+        <span style="color: blue"
+          >allows you to control the layout, colors, fonts, and overall
+          appearance of your website</span
+        >. With CSS, you can create visually appealing and responsive designs
+        that enhance the user experience.</strong
+      >
+      <p><i>Css can be styled in 3 ways:</i></p>
+      <ul>
+        <li>
+          Inline CSS: Applied directly within an HTML element using the "style"
+          attribute. Example:
+          <span style="color: red; font-weight: bold"
+            >This text uses inline CSS</span
+          >.
+        </li>
+        <pre><code>&lt;span style = "color: red; font-weight: bold;"&gt;This text uses inline Css&lt;/span&gt;</code></pre>
+
+        <li>
+          Internal CSS: Defined within a &lt;style&gt; tag in the &lt;head&gt;
+          section of an HTML document.
+          <pre><code>&lt;head&gt;
+      &lt;style&gt;
+        .internal-example {
+          color: green;
+          font-weight: bold;
+        }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;p class="internal-example"&gt;This text uses internal CSS.&lt;/p&gt;
+    &lt;/body&gt;</code></pre>
+        </li>
+        <li>
+          External CSS: Linked to an external stylesheet file using the
+          &lt;link&gt; tag in the &lt;head&gt; section.
+          <pre><code>&lt;head&gt;
+      &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;/head&gt;
+    &lt;!-- styles.css --&gt;
+    .external-example {
+      color: purple;
+      font-weight: bold;
+    }
+    &lt;body&gt;
+      &lt;p class="external-example"&gt;This text uses external CSS.&lt;/p&gt;
+    &lt;/body&gt;</code></pre>
+        </li>
+      </ul>
+      <hr />
+      <h1>Selectors in Css</h1>
+      <strong
+        >Selectors are used to target HTML elements and apply styles to them.
+        There are several types of selectors in CSS, including:</strong
+      >
+      <ol>
+        <!-- Universal Selector  -->
+        <li>
+          Universal Selector: Selects all Element in a Page and apply style to
+          whole Page
+          <pre class="selectorCode"><code>
+        *&lbrace;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box; 
+        &rbrace;
+        </code></pre>
+        </li>
+        <!-- Element Selector -->
+        <li>
+          Element Selector: Select all element of a speacific HTML tag
+          <pre class="selectorCode"><code>
+        p &lbrace;
+          color: blue;
+        &rbrace;
+        </code></pre>
+        </li>
+        <!-- Class Selector -->
+        <li>
+          Class Selector: Select all element with a speacific class attribute
+          <pre class="selectorCode"><code>
+        .classname &lbrace;
+          font-size: 20px;
+        &rbrace;
+        </code></pre>
+        </li>
+        <!-- ID Selector -->
+        <li>
+          ID Selector: Select a speacific element with a speacific id attribute
+          <pre class="selectorCode"><code>
+        #uniqueID &lbrace;
+          background-color: yellow;
+        &rbrace;
+        </code></pre>
+        </li>
+        <!-- Descendant Selector  -->
+        <li>
+          Descendant Selector: Select all element that are nested within a
+          speacific element
+          <pre class="selectorCode"><code>
+        div p &lbrace;
+          color: green;
+        &rbrace;
+        </code></pre>
+        </li>
+        <!-- Grouping Selector -->
+        <li>
+          Grouping Selector: Apply same style to multiple element
+          <pre class="selectorCode"><code>
+        h1, h2, h3 &lbrace;
+          font-family: Arial, sans-serif;
+        &rbrace;
+        </code></pre>
+        </li>
+      </ol>
+      <hr>
+      <h1>Color System</h1>
+      <p>
+        In CSS, colors can be specified using various methods, including:
+      </p>
+      <ul>
+        <li>Named Colors: e.g., red, blue, green.</li>
+        <li>Hexadecimal (Hex) Codes: e.g., #FF5733, #00FF00.</li>
+        <li>RGB (Red, Green, Blue): e.g., rgb(255, 0, 0), rgb(0, 255, 0).</li>
+        <li>RGBA (Red, Green, Blue, Alpha): e.g., rgba(255, 0, 0, 0.5) for semi-transparent colors.</li>
+      </ul>
+      <hr>
+      <h1>Units In Css</h1>
+      <p>
+        CSS supports various units for specifying lengths and sizes, including:
+      </p>
+      <ul>
+        <li>Absolute Units: px (pixels), cm (centimeters), mm (millimeters), in (inches), pt (points), pc (picas).</li>
+        <li>Relative Units: em (relative to the font-size of the element), rem (relative to the font-size of the root element), % (percentage of the parent element's size), vw (viewport width), vh (viewport height).</li>  
+      </ul>
+      <strong>Pixels (px) : A pixel is a fixed unit that represents a single dot on the screen. It is commonly used for font sizes, margins, and padding.</strong>
+
+
+        
+    </main>
+  </body>
+</html>

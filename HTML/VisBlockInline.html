@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Block vs Inline</title>
+    <style>
+      .box {
+        border: 1px solid #444;
+        padding: 8px;
+        margin: 8px 0;
+      }
+      .inline-visual {
+        background: #eef;
+        padding: 2px 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Simple Explanation of Block Level and Inline Elements</h1>
+    </header>
+    <p>
+      Block-level elements (e.g., div, p, h1, ul) create structure. Each starts
+      on a new line and by default stretches the full width of its container.
+    </p>
+    <p>
+      Inline elements (e.g., span, a, strong, img) sit inside lines of text.
+      They do not start a new line and only take as much width as their content.
+    </p>
+    <pre>Note: Inline elements cannot contain block elements (e.g., a span should not wrap a div). CSS can change behavior: display: inline-block or display: block alter defaults.Replaced inline elements (like img) behave a bit differently: you can set width/height.</pre
+    >
+    <div class="box">
+      <h2>Block element: &lt;div&gt;</h2>
+      <p>
+        This is a paragraph (&lt;p&gt;). It is a block element and starts on a
+        new line.
+      </p>
+    </div>
+
+    <!-- Inline elements: flow inside a line -->
+    <div class="box">
+      <p>
+        This sentence has an
+        <span class="inline-visual">inline &lt;span&gt;</span>, a link
+        <a href="#">inline &lt;a&gt;</a>, and an image
+        <img src="https://via.placeholder.com/24" alt="icon" /> inline with the
+        text.
+      </p>
+    </div>
+
+    <!-- Changing display with CSS -->
+    <div class="box" style="display: inline-block">
+      This div is block by default but set to
+      <code>display: inline-block</code>, so it flows inline.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header><h1>Froms and its Types</h1></header>
+    <main>
+      <p>
+        Forms are used to collect the information from the users and send it to
+        user for processing
+      </p>
+      <h2>Form Example</h2>
+      <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+      <p>Explanation of attribute</p>
+      <ul>
+        <li>
+          <strong>action</strong>: Specifies the URL where the form data will be
+          sent for processing.
+        </li>
+        <li>
+          <strong>method</strong>: Defines the HTTP method to be used when
+          submitting the form (GET or POST).
+        </li>
+        <li>
+          <strong>label</strong>: Provides a label for the input fields,
+          improving accessibility.
+        </li>
+        <li>
+          <strong>input type="text"</strong>: Creates a single-line text input
+          field.
+        </li>
+        <li>
+          <strong>input type="email"</strong>: Creates an input field for email
+          addresses, with built-in validation.
+        </li>
+        <li>
+          <strong>input type="password"</strong>: Creates a password input field
+          that masks the entered characters.
+        </li>
+        <li>
+          <strong>required</strong>: Indicates that the input field must be
+          filled out before submitting the form.
+        </li>
+        <li>
+          <strong>input type="submit"</strong>: Creates a submit button to send
+          the form data.
+        </li>
+      </ul>
+      <p>
+        id and name attributes are used to identify the form elements uniquely
+        and to reference them when processing the form data. name attribute is
+        used as the key when the form data is submitted.and id attribute is used
+        to link the label to the input field for better accessibility.
+      </p>
+      <br />
+      <p><b>Types of Forms Elements </b></p>
+      <ul>
+        <li>Text Input</li>
+        <li>Password Input</li>
+        <li>Radio Buttons</li>
+        <li>Checkboxes</li>
+        <li>Dropdown Menus</li>
+        <li>Text Areas</li>
+        <li>File Uploads</li>
+        <li>Submit Buttons</li>
+      </ul>
+      <p><b>
+      Radio Buttons: Radio buttons allow users to select one option from a
+      predefined set of options. They are typically used when there are multiple
+      choices, but only one can be selected at a time.
+      </p>
+      <form>
+        <p>Choose your favorite color:</p>
+        <input type="radio" id="red" name="color" value="red" />
+        <label for="red">Red</label><br />
+        <input type="radio" id="blue" name="color" value="blue" />
+        <label for="blue">Blue</label><br />
+        <input type="radio" id="green" name="color" value="green" />
+        <label for="green">Green</label><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      <p>
+        <b>
+          Checkboxes: Checkboxes allow users to select one or more options from a
+          list. They are useful when multiple selections are allowed.
+        </b>
+      </p>
+      <form>
+        <p>Select your hobbies:</p>
+        <input type="checkbox" id="reading" name="hobby" value="reading" />
+        <label for="reading">Reading</label><br />
+        <input type="checkbox" id="traveling" name="hobby" value="traveling" />
+        <label for="traveling">Traveling</label><br />
+        <input type="checkbox" id="cooking" name="hobby" value="cooking" />
+        <label for="cooking">Cooking</label><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      <p>
+        <b>
+          Dropdown Menus: Dropdown menus provide a list of options in a compact
+          format, allowing users to select one option from the list.
+        </b>
+      </p>
+      <form>
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="australia">Australia</option></select
+        ><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      <p>
+        <b>
+          Text Areas: Text areas are used for multi-line text input, allowing users
+          to enter longer pieces of text, such as comments or messages.
+        </b>
+      </p>
+      <form>
+        <label for="message">Your Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          placeholder="Type your message here..."
+        ></textarea
+        ><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      <p>
+        <b>
+          File Uploads: File upload fields allow users to select and upload files
+          from their device.
+        </b>
+      </p>
+      <form>
+        <label for="fileUpload">Upload a file:</label>
+        <input type="file" id="fileUpload" name="fileUpload" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      <p>
+        <b>
+          Submit Buttons: Submit buttons are used to send the form data to the
+          server for processing. They are typically placed at the end of the form.
+        </b>
+      </p>
+      <form>
+        <input type="submit" value="Submit Form" />
+      </form>
+    </main>
+  </body>
+</html>
